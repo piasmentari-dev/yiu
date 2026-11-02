@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>i love internet!</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="ticker top">
+HEY! HEY! HEY! HEY! HEY! HEY! HEY! HEY! HEY!
+</div>
+
+<main id="website">
+
+<!-- ================= HOME ================= -->
+
+<section class="page active" id="home">
+
+<div class="stars"></div>
+
+<div class="home-header">
+<span>★ welcome to the world wide web ★</span>
+<span class="online">● online</span>
+</div>
+
+<div class="floating-decor decor1">⭐</div>
+<div class="floating-decor decor2">👀</div>
+<div class="floating-decor decor3">🛸</div>
+<div class="floating-decor decor4">💿</div>
+<div class="floating-decor decor5">🌟</div>
+<div class="floating-decor decor6">👾</div>
+
+<div class="fake-search">
+<button onclick="goPage('browser')">Google Search</button>
+<button onclick="goPage('desktop')">I'm Feeling Lucky</button>
+</div>
+
+<div class="home-content">
+
+<div class="home-side">
+<div class="big-exclamation">!!</div>
+<div class="fake-person">🕺</div>
+</div>
+
+<div class="home-title">
+<h1>I LOVE</h1>
+<h2>INTERNET!</h2>
+<p>love being chronically online!</p>
+</div>
+
+<div class="home-side right">
+<div class="block-character">🟨</div>
+<div>🏐</div>
+</div>
+
+</div>
+
+<div class="home-buttons">
+<button onclick="goPage('browser')">start exploring ➜</button>
+<button onclick="goPage('desktop')">open my computer</button>
+</div>
+
+<div class="windows-taskbar">
+<button onclick="goPage('desktop')">⊞ start</button>
+<span>🌐 internet explorer</span>
+<span>♫ media player</span>
+<span id="clock">12:00 PM</span>
+</div>
+
+<div class="home-footer">
+<div class="rating">★★★★★</div>
+<div class="counter">160926</div>
+</div>
+
+</section>
+
+
+<!-- ================= BROWSER ================= -->
+
+<section class="page" id="browser">
+
+<div class="window">
+
+<div class="window-bar">
+<span>🌐 internet explorer</span>
+<button onclick="goPage('home')">×</button>
+</div>
+
+<div class="browser-toolbar">
+<button onclick="goPage('home')">←</button>
+<button onclick="goPage('desktop')">→</button>
+<button onclick="location.reload()">↻</button>
+<div class="url">http://www.the-internet.com</div>
+</div>
+
+<div class="browser-content">
+
+<h1 class="google-title">
+the <span>internet</span>
+</h1>
+
+<p>the whole world inside your computer!</p>
+
+<div class="search-box">
+<input id="searchInput" placeholder="search something fun...">
+<button onclick="searchInternet()">search!</button>
+</div>
+
+<div class="search-suggestions">
+<button onclick="quickSearch('cute websites')">cute websites</button>
+<button onclick="quickSearch('pixel games')">pixel games</button>
+<button onclick="quickSearch('funny cats')">funny cats</button>
+<button onclick="quickSearch('internet nostalgia')">nostalgia</button>
+</div>
+
+<div id="searchResults" class="search-results">
+<h3>★ popular websites today</h3>
+<div class="result">
+<b>the pixel universe</b>
+<p>a place for tiny pixels and big imagination.</p>
+</div>
+<div class="result">
+<b>the secret internet club</b>
+<p>you weren't supposed to find this.</p>
+</div>
+<div class="result">
+<b>cute things archive</b>
+<p>100% unnecessary, 100% adorable.</p>
+</div>
+</div>
+
+<button class="next-button" onclick="goPage('desktop')">
+enter my desktop ➜
+</button>
+
+</div>
+</div>
+
+</section>
+
+
+<!-- ================= DESKTOP ================= -->
+
+<section class="page" id="desktop">
+
+<div class="desktop">
+
+<div class="desktop-heading">
+<h1>my computer!</h1>
+<p>welcome back, internet person.</p>
+</div>
+
+<div class="desktop-icons">
+
+<button onclick="openWindow('files')">
+<span>📁</span>my files
+</button>
+
+<button onclick="openWindow('mail')">
+<span>💌</span>mail
+</button>
+
+<button onclick="openWindow('music')">
+<span>🎵</span>music
+</button>
+
+<button onclick="goPage('arcade')">
+<span>🎮</span>games
+</button>
+
+<button onclick="goPage('guestbook')">
+<span>📒</span>guestbook
+</button>
+
+<button onclick="goPage('profile')">
+<span>🪪</span>profile
+</button>
+
+<button onclick="goPage('paint')">
+<span>🎨</span>paint
+</button>
+
+<button onclick="goPage('quiz')">
+<span>❔</span>quiz
+</button>
+
+<button onclick="goPage('secret')">
+<span>🔒</span>secret
+</button>
+
+</div>
+
+<div class="desktop-popup" id="desktopPopup">
+
+<div class="window-bar">
+<span id="popupTitle">my computer</span>
+<button onclick="closeWindow()">×</button>
+</div>
+
+<div id="popupContent">
+choose an icon to open something!
+</div>
+
+</div>
+
+<div class="desktop-bottom">
+<span>⊞ start</span>
+<span>🌐 internet</span>
+<span>📁 files</span>
+<span id="desktopClock">12:00</span>
+</div>
+
+</div>
+
+<button class="next-button" onclick="goPage('arcade')">
+go to arcade ➜
+</button>
+
+</section>
+
+
+<!-- ================= PROFILE ================= -->
+
+<section class="page" id="profile">
+
+<div class="profile-window">
+
+<div class="window-bar">
+<span>♡ my internet profile</span>
+<button onclick="goPage('desktop')">×</button>
+</div>
+
+<div class="profile-banner">
+✦ WELCOME TO MY LITTLE WORLD ✦
+</div>
+
+<div class="avatar">👾</div>
+
+<h1>internet creature</h1>
+<p class="status">● online and doing absolutely nothing</p>
+
+<div class="profile-stats">
+<div><b>999+</b><small>tabs open</small></div>
+<div><b>∞</b><small>memes</small></div>
+<div><b>2006</b><small>vibes</small></div>
+</div>
+
+<div class="profile-bio">
+<h3>✿ little introduction</h3>
+<p>professional daydreamer.</p>
+<p>collector of pixels, stars and random things.</p>
+<p>currently obsessed with the internet.</p>
+</div>
+
+<div class="mood-box">
+my current mood:
+<b id="mood">sparkly ✨</b>
+<button onclick="changeMood()">change mood</button>
+</div>
+
+</div>
+
+<button class="next-button" onclick="goPage('paint')">
+visit paint studio ➜
+</button>
+
+</section>
+
+
+<!-- ================= PAINT ================= -->
+
+<section class="page" id="paint">
+
+<div class="paint-window">
+
+<div class="window-bar">
+<span>🎨 microsoft-ish paint</span>
+<button onclick="goPage('desktop')">×</button>
+</div>
+
+<div class="paint-tools">
+
+<label>color
+<input type="color" id="paintColor" value="#ed398b">
+</label>
+
+<label>size
+<input type="range" id="paintSize" min="1" max="35" value="8">
+</label>
+
+<button onclick="clearPaint()">clear</button>
+<button onclick="savePaint()">save png</button>
+
+</div>
+
+<canvas id="paintCanvas" width="800" height="430"></canvas>
+
+<p>draw your own little internet masterpiece ♡</p>
+
+</div>
+
+<button class="next-button" onclick="goPage('quiz')">
+take a quiz ➜
+</button>
+
+</section>
+
+
+<!-- ================= QUIZ ================= -->
+
+<section class="page" id="quiz">
+
+<div class="quiz-window">
+
+<div class="window-bar">
+<span>❔ internet personality test</span>
+<button onclick="goPage('desktop')">×</button>
+</div>
+
+<h1>what internet creature are you?</h1>
+
+<p>choose your favorite thing!</p>
+
+<div class="quiz-options">
+
+<button onclick="quizAnswer('star')">⭐ sparkly stars</button>
+
+<button onclick="quizAnswer('cat')">🐈 silly cats</button>
+
+<button onclick="quizAnswer('computer')">💻 old computers</button>
+
+<button onclick="quizAnswer('alien')">👽 aliens</button>
+
+</div>
+
+<div id="quizResult">
+your result will appear here...
+</div>
+
+<button onclick="resetQuiz()">try again</button>
+
+</div>
+
+<button class="next-button" onclick="goPage('secret')">
+something mysterious ➜
+</button>
+
+</section>
+
+
+<!-- ================= SECRET ================= -->
+
+<section class="page" id="secret">
+
+<div class="secret-window">
+
+<div class="window-bar">
+<span>🔒 classified folder</span>
+<button onclick="goPage('desktop')">×</button>
+</div>
+
+<h1>you found a secret!</h1>
+
+<div class="secret-lock" id="secretLock">🔐</div>
+
+<p>enter the magic password.</p>
+
+<input id="secretInput" placeholder="password...">
+
+<button onclick="unlockSecret()">unlock</button>
+
+<div id="secretResult">
+hint: it's something sparkly.
+</div>
+
+</div>
+
+<button class="next-button" onclick="goPage('guestbook')">
+continue exploring ➜
+</button>
+
+</section>
+
+
+<!-- ================= ARCADE ================= -->
+
+<section class="page" id="arcade">
+
+<div class="arcade-header">
+<h1>★ INTERNET ARCADE ★</h1>
+<p>choose your game!</p>
+</div>
+
+<div class="arcade-games">
+
+<div class="game-card">
+<div class="game-image">⭐</div>
+<h2>star catcher</h2>
+<p>catch as many stars as possible!</p>
+<button onclick="startGame('stars')">PLAY!</button>
+</div>
+
+<div class="game-card">
+<div class="game-image">🎯</div>
+<h2>click mania</h2>
+<p>click as fast as possible!</p>
+<button onclick="startGame('click')">PLAY!</button>
+</div>
+
+<div class="game-card">
+<div class="game-image">🧠</div>
+<h2>memory match</h2>
+<p>find matching pairs!</p>
+<button onclick="startGame('memory')">PLAY!</button>
+</div>
+
+</div>
+
+<div class="game-screen">
+
+<div class="window-bar">
+<span>🎮 game console</span>
+<button onclick="stopGame()">×</button>
+</div>
+
+<div id="gameArea">
+choose a game above!
+</div>
+
+</div>
+
+<button class="next-button" onclick="goPage('guestbook')">
+next adventure ➜
+</button>
+
+</section>
+
+
+<!-- ================= GUESTBOOK ================= -->
+
+<section class="page" id="guestbook">
+
+<div class="guestbook">
+
+<h1>♡ internet guestbook ♡</h1>
+
+<p>leave your little mark here!</p>
+
+<form id="guestForm">
+
+<input id="guestName" placeholder="your nickname" required>
+
+<textarea id="guestMessage"
+placeholder="write something nice..."
+required></textarea>
+
+<button type="submit">sign guestbook!</button>
+
+</form>
+
+<div id="guestEntries">
+
+<div class="guest-entry">
+<b>web fairy</b>
+<p>this website is so sparkly!!!</p>
+</div>
+
+<div class="guest-entry">
+<b>pixel person</b>
+<p>i was here before it was cool.</p>
+</div>
+
+</div>
+
+</div>
+
+<button class="next-button" onclick="goPage('final')">
+one last page ➜
+</button>
+
+</section>
+
+
+<!-- ================= FINAL ================= -->
+
+<section class="page" id="final">
+
+<div class="final-stars">✦ ★ ✧ ✿ ☆ ✦</div>
+
+<div class="final-window">
+
+<div class="window-bar">
+<span>connection successful!</span>
+<span>● ● ●</span>
+</div>
+
+<div class="final-content">
+
+<div class="final-face">☺</div>
+
+<h1>FOREVER ONLINE!</h1>
+
+<h2>thanks for visiting!</h2>
+
+<p>you have officially survived my little corner of the internet.</p>
+
+<div class="loading-bar">
+<div></div>
+</div>
+
+<p>100% internet happiness.</p>
+
+<button onclick="goPage('home')">
+↶ start all over
+</button>
+
+<button onclick="goPage('desktop')">
+back to desktop
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<div class="ticker bottom">
+HEY! HEY! HEY! HEY! HEY! HEY! HEY! HEY! HEY!
+</div>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
